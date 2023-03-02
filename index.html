@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trteam - site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&family=Saira:wght@800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h2 {
+            font-family: 'Saira', sans-serif;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: white;
+            text-shadow: 0 0 1px transparent, 0 1px 2px rgb(0 0 0 / 50%);
+        }
+
+        body >img {
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        section {
+            display: grid;
+            place-items: center;
+            position: absolute;
+            inset: 0;
+            overflow-y: scroll;
+        }
+        
+        section div {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section > div {
+            padding: 100px 10px;
+        }
+
+        section div img {
+            width: 100px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            box-shadow: 0 0 8px 1px lightblue;
+        }
+
+        a {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            border: 1.5px solid white;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+            gap: 20px;
+            align-items: center;
+            border-radius: 4px;
+            transition-duration: 200ms;
+        }
+
+        a:hover {
+            background: white;
+            color: #0f172a;
+        }
+
+        a i {
+            font-size: 1.3em;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <img src="https://images.unsplash.com/photo-1508020268086-b96cf4f4bb2e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="bg" />
+    <section>
+        <div>
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsJCQcJCQcJCQkJCwkJCQkJCQsJCwsMCwsLDA0QDBEODQ4MEhkSJRodJR0ZHxwpKRYlNzU2GioyPi0pMBk7IRP/2wBDAQcICAsJCxULCxUsHRkdLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCz/wAARCAC0ANoDASIAAhEBAxEB/8QAGgABAQEBAQEBAAAAAAAAAAAAAAcGBAUIA//EADoQAQACAgECAQYLBwUBAAAAAAABAgMEBQYREgcTITFBURQWFyJUVWGTldLUIzZxcnSBtDI0U3Oz0//EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA7NTi+Y5CuS2hx+9t1xTWuSdPWzZ4pNomYi04qz27+x0/Fvqv6h5r8O2/yNV0D1nwvSuvy+LkMG/lvuZtfJj+B48F6xXHS9Z8XnctJ9vultPle6R+g859xp/qASH4t9V/UPNfh23+Q+LfVf1DzX4dt/kV75XukPoXOfcaf6k+V7pH6Fzn3Gn+pBIfi31X9Q81+Hbf5HBsau5qZPNbevn18vbv5vYxXxX7fy3iJW35XukfoXOfcaf6h7ely/RXXensasUx7VaU8WfT3Mfm9rDEz4fOU7T3j+atvR39cd/SHziNR1p0tl6X5OMFLXycdt1tm4/NePnTSJ7WxZJj0eKno7++JifR37RlwAAAAAAAAAAAAAAAAAAAAUHyfdH8H1Pr8xl5G25W2pm1seL4LlpjiYyUva3i8VLe6G3+Sfoz/k5b++zi/+KIa+/wAjqReupubWvW8xN418+XFFpj0RNopaFS8ku9yG3vdQRt7e1sRTU1ZpGxmyZYr+1t6vHMgwXVvCYOnud5Di8GXJlwYYw5MN8vh874M2OuSK38MRXvHft3iI79vVHftFU1PJN0rGtrRtbPJ5djzVJz5MWbFjx2yTWJtNKeamYj3R3n+LBeU797+T/p+P/wAeir9e5s+v0bzObBly4ctMfH+HJhvbHevfawVntakxIPLnyT9Gdp/a8v6vZs4u/wD4plqUy9Mdca+tobM540uax6UXr275sOTJGK+K8V9HftM1t9sfZ6OLjbdbcxlvg43Y5rbyUp48lcOzsTWlJ9He9pvER3+2W/6I8nXJ6nIavM8/SmGdO8ZtPSi9MuS2eszNcua1JmkRX0WrEWmZn19vD2uHr+VvXw36c0s9ojzuvyuGuO3t8OXFli1Y/j2if7IWqnlZ6g19nLodP62SMnwPLO5vzWe9abE0nHjxd49tYm02/mj2xMRKwAAAAAAAAAAAAAAAAAAAAFT8jn+/6j/o9T/1slja9AdU8R0vs8vm5Gm5eu3gwYsUamPHee9L2tPi85ev2AeU797+T/p+P/x6Kn5Q/wByOc/6+N/y8CM9Zc1odQc/ucnpVz1182LVpWNilaZInFirjt3rS1o9nvbbqvyh9M8305yXE6eHk67OzXUjHbYw4a4onFnxZZ8VqZbT6qz7AeD5O+q9Ppze29bfrEaPJzr1y7ER3trZMXjil7RHrp86fF7vX7JibF1HTqDb4XZ+Le5ixb18cZMN+1LefwzWZmmDLM+GtrRPzben+3fxV+Y1A6K8oWTgMc8dytdjZ4uItOvOGK32NW3r8FIyWiJpPu7x29ce6QwmzXZpn2KbVctdmmXJXYrni0Za5YtMXjJF/neLv37935N71tzvQnUkfD+Pw8lrczSKVvfJrYK4NzHExXtnmmaZi1Y/027T6u09/RNMEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/9k=" alt="dp" />
+            <h2>trteam</h2>
+            <div>
+                <a href="https://discord.gg/9bxBhdBZ">
+                    <i class="fa-brands fa-"></i>
+                    <p>discord</p>
+                </a>
+                <a href="https://www.tiktok.com/@trhackerhack59">
+                    <i class="fa-brands fa-tiktok"></i>
+                    <p>Tiktok</p>
+                </a>
+                <a href="https://www.youtube.com/channel/UCiVa4JguxdRBuF6WbpgMoJw">
+                    <i class="fa-brands fa-youtube"></i>
+                    <p>youtube</p>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
